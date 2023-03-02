@@ -102,7 +102,7 @@ const getAll = async (req, res) => {
     } catch (error) {
         console.log(error);
         return res.status(500).json({
-            data: cities,
+            data: {},
             success: false,
             message: "Not able to fetch the cities",
             err: error
